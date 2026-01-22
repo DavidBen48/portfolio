@@ -23,10 +23,11 @@ const Projects: React.FC = () => {
               <div 
                 key={project.id}
                 className={`
-                  group relative border bg-black p-8 transition-all duration-500
+                  group relative border bg-black p-8 transition-all duration-500 ease-out
+                  hover:scale-[1.02] hover:shadow-2xl hover:shadow-accent/5 hover:z-10
                   ${isCompleted ? 'border-gray-800 hover:border-accent' : ''}
                   ${isInProgress ? 'border-gray-800 border-dashed' : ''}
-                  ${project.status === 'STRUCTURING' ? 'border-gray-900 opacity-70' : ''}
+                  ${project.status === 'STRUCTURING' ? 'border-gray-900 opacity-70 hover:opacity-100' : ''}
                 `}
               >
                 {/* Status Badge */}
