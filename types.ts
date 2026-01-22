@@ -1,0 +1,16 @@
+export interface Project {
+  id: number;
+  title: string;
+  description: string;
+  stack: string[];
+  status: 'COMPLETED' | 'IN_PROGRESS' | 'STRUCTURING';
+  repoUrl?: string;
+  deployUrl?: string;
+}
+
+export interface Skill {
+  name: string;
+  level: 'Intermediate' | 'Basic';
+}
+
+export type CodeTab = 'TypeScript' | 'Golang' | 'Python' | 'Linux';
