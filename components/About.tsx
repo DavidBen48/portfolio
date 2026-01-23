@@ -154,7 +154,7 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
               <span className="table-cell">
-                <span className="text-cyan-400">func</span> <span className="text-yellow-300">main</span><span className="text-white">() {</span>
+                <span className="text-cyan-400">func</span> <span className="text-yellow-300">main</span><span className="text-white">() {'{'}</span>
               </span>
             </div>
             <div className="table-row">
@@ -208,7 +208,7 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">18</span>
               <span className="table-cell">
-                <span className="text-white">}</span>
+                <span className="text-white">{'}'}</span>
               </span>
             </div>
           </>
