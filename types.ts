@@ -10,7 +10,8 @@ export interface Project {
 
 export interface Skill {
   name: string;
-  level: 'Intermediate' | 'Basic';
+  level: 'Intermediate' | 'Basic'; // Mantido para compatibilidade, mas usaremos score visualmente
+  score: number; // 1 a 4
 }
 
 export type CodeTab = 'TypeScript' | 'Golang' | 'Python' | 'Linux';

@@ -1,62 +1,102 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { SKILLS } from '../constants';
+import { Code, Hash, Terminal, Cpu } from 'lucide-react';
 
 const TechStack: React.FC = () => {
-  const intermediateSkills = SKILLS.filter(s => s.level === 'Intermediate');
-  const basicSkills = SKILLS.filter(s => s.level === 'Basic');
+  const [offset, setOffset] = useState(0);
+
+  // Adjusted Slicing for new constants array structure (Supabase added)
+  const backendSkills = SKILLS.slice(0, 5);
+  const infraSkills = SKILLS.slice(5, 9);
+  const aiSkills = SKILLS.slice(9, 13);
+  const frontendSkills = SKILLS.slice(13, 17);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setOffset(window.scrollY);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  const renderSkillBar = (score: number) => {
+    return (
+      <div className="flex gap-1.5">
+        {[1, 2, 3, 4, 5].map((i) => (
+          <div 
+            key={i} 
+            className={`
+              w-1.5 h-3 transition-all duration-500 rounded-sm
+              ${i <= score 
+                ? 'bg-accent shadow-[0_0_5px_rgba(34,197,94,0.5)]' 
+                : 'bg-gray-800/30'}
+            `}
+          ></div>
+        ))}
+      </div>
+    );
+  };
+
+  const renderSkillGroup = (title: string, skills: typeof SKILLS) => (
+    <div className="space-y-4">
+      <div className="mb-4 border-b border-gray-800 pb-2">
+        <span className="text-accent text-sm font-mono tracking-widest uppercase flex items-center gap-2 font-bold">
+           <span className="text-gray-600">//</span> {title}
+        </span>
+      </div>
+      {/* Grid 2x2 for items inside the group */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        {skills.map((skill) => (
+          <div key={skill.name} className="flex items-center justify-between p-4 bg-black/60 border border-gray-900 hover:border-accent/40 transition-all duration-300 group shadow-lg">
+            <span className="text-gray-300 font-mono text-sm font-medium group-hover:text-white tracking-tight">{skill.name}</span>
+            {renderSkillBar(skill.score)}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 
   return (
-    <section id="stack" className="py-24 bg-dark-lighter">
-      <div className="max-w-7xl mx-auto px-6">
+    <section id="stack" className="py-24 bg-dark-lighter relative overflow-hidden">
+      {/* Binary & Code Parallax Background */}
+      <div className="absolute inset-0 z-0 pointer-events-none opacity-10 select-none overflow-hidden font-mono">
+        <div 
+          className="absolute top-0 right-[5%] text-accent text-6xl font-bold opacity-20"
+          style={{ transform: `translateY(${offset * 0.2}px)` }}
+        >
+          10110
+        </div>
+        <div 
+          className="absolute top-[40%] left-[2%] text-white text-4xl opacity-10"
+          style={{ transform: `translateY(${-offset * 0.1}px)` }}
+        >
+          01001
+        </div>
+        <div 
+          className="absolute top-[20%] left-[20%] text-gray-600"
+          style={{ transform: `translateY(${offset * 0.15}px) rotate(-15deg)` }}
+        >
+          <Code size={120} />
+        </div>
+        <div 
+          className="absolute bottom-[10%] right-[15%] text-gray-600"
+          style={{ transform: `translateY(${-offset * 0.2}px) rotate(20deg)` }}
+        >
+          <Cpu size={100} />
+        </div>
+      </div>
+
+      <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex items-center justify-between mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold text-white tracking-tight">Tech Stack</h2>
+          <h2 className="text-4xl font-bold text-white tracking-tight">Tech Stack</h2>
           <span className="hidden md:block h-px flex-1 bg-gray-800 ml-8"></span>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          
-          {/* Intermediate Column */}
-          <div>
-            <h3 className="text-accent font-mono text-sm tracking-widest mb-6 uppercase border-b border-accent/20 pb-2 inline-block">
-              // Intermediate Level
-            </h3>
-            <div className="space-y-4">
-              {intermediateSkills.map((skill) => (
-                <div key={skill.name} className="group flex items-center justify-between p-4 bg-black border border-gray-800 hover:border-accent/50 transition-all duration-300">
-                  <span className="text-gray-300 font-mono group-hover:text-white">{skill.name}</span>
-                  <div className="flex gap-1">
-                    {[1, 2, 3, 4].map((i) => (
-                      <div key={i} className="w-1.5 h-4 bg-accent/80"></div>
-                    ))}
-                    <div className="w-1.5 h-4 bg-gray-800"></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
-          {/* Basic Column */}
-          <div>
-            <h3 className="text-gray-500 font-mono text-sm tracking-widest mb-6 uppercase border-b border-gray-700 pb-2 inline-block">
-              // Basic Level
-            </h3>
-            <div className="space-y-4">
-              {basicSkills.map((skill) => (
-                <div key={skill.name} className="group flex items-center justify-between p-4 bg-black border border-gray-900 hover:border-gray-700 transition-all duration-300">
-                  <span className="text-gray-400 font-mono group-hover:text-gray-300">{skill.name}</span>
-                  <div className="flex gap-1">
-                    {[1, 2].map((i) => (
-                      <div key={i} className="w-1.5 h-4 bg-gray-600"></div>
-                    ))}
-                    <div className="w-1.5 h-4 bg-gray-800"></div>
-                    <div className="w-1.5 h-4 bg-gray-800"></div>
-                    <div className="w-1.5 h-4 bg-gray-800"></div>
-                  </div>
-                </div>
-              ))}
-            </div>
-          </div>
-
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16">
+          {renderSkillGroup("Backend Engineering", backendSkills)}
+          {renderSkillGroup("AI Workflow & Tools", aiSkills)}
+          {renderSkillGroup("Frontend Ecosystem", frontendSkills)}
+          {renderSkillGroup("Infrastructure & Database", infraSkills)}
         </div>
       </div>
     </section>

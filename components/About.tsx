@@ -12,65 +12,83 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-purple-400">const</span> <span className="text-blue-300">profile</span><span className="text-gray-400">:</span> <span className="text-yellow-300">Developer</span> <span className="text-gray-400">=</span> <span className="text-yellow-400">{'{'}</span>
+                <span className="text-purple-400">const</span> <span className="text-blue-300">perfil</span><span className="text-gray-400">:</span> <span className="text-yellow-300">Desenvolvedor</span> <span className="text-gray-400">=</span> <span className="text-yellow-400">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">name</span><span className="text-gray-400">:</span> <span className="text-orange-300">"David Ben"</span><span className="text-gray-400">,</span>
+                <span className="text-sky-300">nome</span><span className="text-gray-400">:</span> <span className="text-orange-300">"David Ben"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">education</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Computer Science"</span><span className="text-gray-400">,</span>
+                <span className="text-sky-300">educacao</span><span className="text-gray-400">:</span> <span className="text-yellow-400">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
-              <span className="table-cell pl-4">
-                <span className="text-sky-300">focus</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Backend Engineering"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-8">
+                <span className="text-sky-300">curso</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Ciência da Computação"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
-              <span className="table-cell pl-4">
-                <span className="text-sky-300">location</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Rio de Janeiro - Brazil"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-8">
+                <span className="text-sky-300">status</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Em andamento"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
-              <span className="table-cell pl-4">
-                <span className="text-sky-300">hobbies</span><span className="text-gray-400">:</span> <span className="text-yellow-400">[</span>
+              <span className="table-cell pl-8">
+                <span className="text-sky-300">conclusao</span><span className="text-gray-400">:</span> <span className="text-purple-400">2029</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
-              <span className="table-cell pl-8">
-                <span className="text-orange-300">"Coding"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-4">
+                <span className="text-yellow-400">{'}'}</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
-              <span className="table-cell pl-8">
-                <span className="text-orange-300">"AI Research"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">foco</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Engenharia Backend"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
-              <span className="table-cell pl-8">
-                <span className="text-orange-300">"Coffee"</span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">especialidade</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Desenvolvimento Web com IA"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell pl-4">
-                <span className="text-yellow-400">]</span>
+                <span className="text-sky-300">hobbies</span><span className="text-gray-400">:</span> <span className="text-yellow-400">[</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
+              <span className="table-cell pl-8">
+                <span className="text-orange-300">"Música"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Código"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Atletismo"</span><span className="text-gray-400">,</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
+              <span className="table-cell pl-8">
+                <span className="text-orange-300">"Futebol"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Livros Científicos"</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
+              <span className="table-cell pl-4">
+                <span className="text-yellow-400">]</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
               <span className="table-cell">
                 <span className="text-yellow-400">{'}'}</span><span className="text-gray-400">;</span>
               </span>
@@ -84,25 +102,25 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-cyan-400">type</span> <span className="text-yellow-300">Developer</span> <span className="text-cyan-400">struct</span> <span className="text-white">{'{'}</span>
+                <span className="text-cyan-400">type</span> <span className="text-yellow-300">Desenvolvedor</span> <span className="text-cyan-400">struct</span> <span className="text-white">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
               <span className="table-cell pl-4">
-                <span className="text-white">Name</span> <span className="text-green-400">string</span>
+                <span className="text-white">Nome</span> <span className="text-green-400">string</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
               <span className="table-cell pl-4">
-                <span className="text-white">Focus</span> <span className="text-green-400">string</span>
+                <span className="text-white">Foco</span> <span className="text-green-400">string</span>
               </span>
             </div>
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
               <span className="table-cell pl-4">
-                <span className="text-white">Location</span> <span className="text-green-400">string</span>
+                <span className="text-white">Stack</span> <span className="text-green-400">[]string</span>
               </span>
             </div>
             <div className="table-row">
@@ -124,25 +142,25 @@ const About: React.FC = () => {
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
               <span className="table-cell pl-4">
-                <span className="text-white">dev</span> <span className="text-white">:=</span> <span className="text-yellow-300">Developer</span><span className="text-white">{'{'}</span>
+                <span className="text-white">dev</span> <span className="text-white">:=</span> <span className="text-yellow-300">Desenvolvedor</span><span className="text-white">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
               <span className="table-cell pl-8">
-                <span className="text-white">Name:</span> <span className="text-green-300">"David Ben"</span><span className="text-white">,</span>
+                <span className="text-white">Nome:</span> <span className="text-green-300">"David Ben"</span><span className="text-white">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell pl-8">
-                <span className="text-white">Focus:</span> <span className="text-green-300">"Backend Eng"</span><span className="text-white">,</span>
+                <span className="text-white">Foco:</span> <span className="text-green-300">"Backend & IA"</span><span className="text-white">,</span>
               </span>
             </div>
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
               <span className="table-cell pl-8">
-                <span className="text-white">Location:</span> <span className="text-green-300">"RJ - Brazil"</span><span className="text-white">,</span>
+                <span className="text-white">Stack:</span> <span className="text-white">[]</span><span className="text-green-400">string</span><span className="text-white">{'{'}</span><span className="text-green-300">"Go"</span><span className="text-white">, </span><span className="text-green-300">"Node"</span><span className="text-white">, </span><span className="text-green-300">"AI"</span><span className="text-white">{'}'},</span>
               </span>
             </div>
              <div className="table-row">
@@ -172,7 +190,7 @@ const About: React.FC = () => {
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-blue-400">class</span> <span className="text-yellow-300">Developer</span><span className="text-white">:</span>
+                <span className="text-blue-400">class</span> <span className="text-yellow-300">Engenheiro</span><span className="text-white">:</span>
               </span>
             </div>
             <div className="table-row">
@@ -184,19 +202,19 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
               <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.name</span> <span className="text-white">=</span> <span className="text-green-300">"David Ben"</span>
+                 <span className="text-orange-400">self</span><span className="text-white">.nome</span> <span className="text-white">=</span> <span className="text-green-300">"David Ben"</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
               <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.focus</span> <span className="text-white">=</span> <span className="text-green-300">"Backend"</span>
+                 <span className="text-orange-400">self</span><span className="text-white">.paixao</span> <span className="text-white">=</span> <span className="text-green-300">"Prompts & Backend"</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
               <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.loc</span> <span className="text-white">=</span> <span className="text-green-300">"Rio, Brazil"</span>
+                 <span className="text-orange-400">self</span><span className="text-white">.local</span> <span className="text-white">=</span> <span className="text-green-300">"Rio, Brasil"</span>
               </span>
             </div>
             <div className="table-row">
@@ -206,13 +224,13 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
               <span className="table-cell pl-4">
-                 <span className="text-blue-400">def</span> <span className="text-yellow-300">code</span><span className="text-white">(</span><span className="text-orange-400">self</span><span className="text-white">):</span>
+                 <span className="text-blue-400">def</span> <span className="text-yellow-300">construir</span><span className="text-white">(</span><span className="text-orange-400">self</span><span className="text-white">):</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
               <span className="table-cell pl-8">
-                 <span className="text-blue-400">return</span> <span className="text-green-300">"Building..."</span>
+                 <span className="text-blue-400">return</span> <span className="text-green-300">"Soluções Escaláveis..."</span>
               </span>
             </div>
             <div className="table-row">
@@ -222,17 +240,17 @@ const About: React.FC = () => {
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell">
-                 <span className="text-white">me</span> <span className="text-white">=</span> <span className="text-yellow-300">Developer</span><span className="text-white">()</span>
+                 <span className="text-white">eu</span> <span className="text-white">=</span> <span className="text-yellow-300">Engenheiro</span><span className="text-white">()</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
               <span className="table-cell">
-                 <span className="text-yellow-300">print</span><span className="text-white">(me.__dict__)</span>
+                 <span className="text-yellow-300">print</span><span className="text-white">(eu.__dict__)</span>
               </span>
             </div>
           </>
-        )
+        );
 
       case 'Linux':
         return (
@@ -256,25 +274,25 @@ const About: React.FC = () => {
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
               <span className="table-cell">
-                <span className="text-green-400">david@ben:~$</span> <span className="text-white">cat career.txt</span>
+                <span className="text-green-400">david@ben:~$</span> <span className="text-white">cat carreira.txt</span>
               </span>
             </div>
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Computer Science Student</span>
+                <span className="text-gray-400">{'>'} Ciência da Computação (2029)</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Backend Enthusiast</span>
+                <span className="text-gray-400">{'>'} Especialista em Backend</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Freelance AI Integrator</span>
+                <span className="text-gray-400">{'>'} Integrador de IA & Prompts</span>
               </span>
             </div>
              <div className="table-row">
@@ -290,11 +308,11 @@ const About: React.FC = () => {
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell">
-                <span className="text-gray-400">  up 24 hours, 7 days, 365 years</span>
+                <span className="text-gray-400">  online 24h, 7 dias, focado 100%</span>
               </span>
             </div>
           </>
-        )
+        );
       
       default:
         return null;
@@ -307,19 +325,36 @@ const About: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           
           {/* Text Content */}
-          <div className="order-2 lg:order-1">
+          <div className="order-2 lg:order-1 font-mono">
             <div className="flex items-center gap-2 mb-6">
               <span className="h-px w-8 bg-accent"></span>
               <h2 className="text-2xl font-bold uppercase tracking-wider text-white">Sobre Mim</h2>
             </div>
-            <p className="text-gray-400 leading-relaxed mb-6 text-lg">
-              Faço <span className="text-white font-medium">Ciência da Computação</span> focado em desenvolvimento backend. 
-              Tenho forte noção de frontend e análise de dados, atuando em projetos freelance que integram 
-              IA através de engenharia de prompt avançada.
-            </p>
-            <p className="text-gray-500 leading-relaxed">
-              Minha paixão é construir sistemas resilientes e escaláveis, sempre buscando a melhor arquitetura para resolver problemas complexos.
-            </p>
+            
+            <div className="relative">
+              <span className="text-yellow-500 text-3xl font-bold block mb-2">{'{'}</span>
+              
+              <div className="pl-6 border-l border-gray-800 ml-3 space-y-4">
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Curso <span className="text-white font-medium">Ciência da Computação</span> (formação prevista para 2029) com foco absoluto em engenharia backend e arquitetura de software.
+                </p>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                  Possuo expertise avançada em <span className="text-accent font-medium">Inteligência Artificial Generativa</span> para desenvolvimento web, dominando a criação de prompts complexos para maximizar a produtividade e qualidade do código.
+                </p>
+                <p className="text-gray-300 leading-relaxed text-lg">
+                   Atuo na interseção entre código robusto e automação inteligente.
+                </p>
+              </div>
+
+              <span className="text-yellow-500 text-3xl font-bold block mt-2">{'}'}</span>
+            </div>
+
+            <div className="mt-8 flex gap-3 text-gray-500 text-base leading-relaxed">
+              <span className="text-gray-600 font-bold select-none">//</span>
+              <p>
+                Minha missão é construir sistemas que não apenas funcionem, mas que sejam inteligentes, escaláveis e resilientes.
+              </p>
+            </div>
           </div>
 
           {/* Interactive Terminal */}
@@ -353,7 +388,7 @@ const About: React.FC = () => {
               </div>
 
               {/* Code Area */}
-              <div className="p-6 overflow-x-auto min-h-[300px]">
+              <div className="p-6 overflow-x-auto min-h-[350px]">
                 <pre className="font-mono text-sm leading-6">
                   <code className="block w-full">
                     {renderCodeContent()}
