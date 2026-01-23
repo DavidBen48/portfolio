@@ -88,15 +88,18 @@ const TechStack: React.FC = () => {
 
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex items-center justify-between mb-16">
-          <h2 className="text-4xl font-bold text-white tracking-tight">Tech Stack</h2>
+          <div className="flex items-center gap-2">
+            <span className="h-px w-8 bg-accent"></span>
+            <h2 className="text-4xl font-bold text-white tracking-tight">Tech Stack</h2>
+          </div>
           <span className="hidden md:block h-px flex-1 bg-gray-800 ml-8"></span>
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16">
           {renderSkillGroup("Backend Engineering", backendSkills)}
+          {renderSkillGroup("Infrastructure & Database", infraSkills)}
           {renderSkillGroup("AI Workflow & Tools", aiSkills)}
           {renderSkillGroup("Frontend Ecosystem", frontendSkills)}
-          {renderSkillGroup("Infrastructure & Database", infraSkills)}
         </div>
       </div>
     </section>

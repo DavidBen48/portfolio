@@ -1,3 +1,4 @@
+
 import { Project, Skill } from './types';
 
 export const PROJECTS: Project[] = [
@@ -29,6 +30,22 @@ export const PROJECTS: Project[] = [
     description: "Sistema de login seguro, registro de usuários e controle de acesso a recursos protegidos.",
     stack: ["Golang", "Net/Http", "Gin", "MongoDB", "Swagger"],
     status: "STRUCTURING"
+  },
+  {
+    id: 5,
+    title: "API de Clima",
+    description: "Sistema que indica o clima em um lugar especificado pelo usuário.",
+    stack: ["TypeScript", "NestJS", "Docker", "Axios", "ConfigModule"],
+    status: "STRUCTURING"
+  },
+  {
+    id: 6,
+    title: "Loja de Roupa Connect",
+    description: "Um serviço freelance que fiz sob encomenda para um evento em específico, utilizando IA.",
+    stack: ["React", "NextJS", "Framer Motion", "Radix UI", "TailwindCSS", "API Whatsapp"],
+    status: "COMPLETED",
+    repoUrl: "https://github.com/DavidBen48/connect-sao-bento",
+    deployUrl: "https://connect-saobento.vercel.app/"
   }
 ];
 

@@ -79,7 +79,9 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           </p>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-tight">
-            <span className="text-accent">{'{D}'}</span>AVID <span className="text-accent">{'{B}'}</span>EN
+            <span className="text-accent">
+            {'{'}</span>D<span className="text-accent">{'}'}</span>AVID 
+            <span className="text-accent">{'{'}</span>B<span className="text-accent">{'}'}</span>EN
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-400 font-light mt-2">

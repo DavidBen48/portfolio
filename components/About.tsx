@@ -12,83 +12,89 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-purple-400">const</span> <span className="text-blue-300">perfil</span><span className="text-gray-400">:</span> <span className="text-yellow-300">Desenvolvedor</span> <span className="text-gray-400">=</span> <span className="text-yellow-400">{'{'}</span>
+                <span className="text-gray-500">// Definindo a interface do meu perfil</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
-              <span className="table-cell pl-4">
-                <span className="text-sky-300">nome</span><span className="text-gray-400">:</span> <span className="text-orange-300">"David Ben"</span><span className="text-gray-400">,</span>
+              <span className="table-cell">
+                <span className="text-purple-400">const</span> <span className="text-blue-300">perfil</span><span className="text-gray-400">:</span> <span className="text-yellow-300">Desenvolvedor</span> <span className="text-gray-400">=</span> <span className="text-yellow-400">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">educacao</span><span className="text-gray-400">:</span> <span className="text-yellow-400">{'{'}</span>
+                <span className="text-sky-300">nome</span><span className="text-gray-400">:</span> <span className="text-orange-300">"David Ben"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
-              <span className="table-cell pl-8">
-                <span className="text-sky-300">curso</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Ciência da Computação"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">educacao</span><span className="text-gray-400">:</span> <span className="text-yellow-400">{'{'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
               <span className="table-cell pl-8">
-                <span className="text-sky-300">status</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Em andamento"</span><span className="text-gray-400">,</span>
+                <span className="text-sky-300">curso</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Ciência da Computação"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
               <span className="table-cell pl-8">
-                <span className="text-sky-300">conclusao</span><span className="text-gray-400">:</span> <span className="text-purple-400">2029</span>
+                <span className="text-sky-300">status</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Em andamento"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
-              <span className="table-cell pl-4">
-                <span className="text-yellow-400">{'}'}</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-8">
+                <span className="text-sky-300">conclusao</span><span className="text-gray-400">:</span> <span className="text-purple-400">2029</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">foco</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Engenharia Backend"</span><span className="text-gray-400">,</span>
+                <span className="text-yellow-400">{'}'}</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">especialidade</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Desenvolvimento Web com IA"</span><span className="text-gray-400">,</span>
+                <span className="text-sky-300">foco</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Engenharia Backend"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell pl-4">
-                <span className="text-sky-300">hobbies</span><span className="text-gray-400">:</span> <span className="text-yellow-400">[</span>
+                <span className="text-sky-300">especialidade</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Desenvolvimento Web com IA"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
-              <span className="table-cell pl-8">
-                <span className="text-orange-300">"Música"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Código"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Atletismo"</span><span className="text-gray-400">,</span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">hobbies</span><span className="text-gray-400">:</span> <span className="text-yellow-400">[</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
               <span className="table-cell pl-8">
-                <span className="text-orange-300">"Futebol"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Livros Científicos"</span>
+                <span className="text-orange-300">"Música"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Código"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Atletismo"</span><span className="text-gray-400">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
+              <span className="table-cell pl-8">
+                <span className="text-orange-300">"Futebol"</span><span className="text-gray-400">,</span> <span className="text-orange-300">"Livros Científicos"</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
               <span className="table-cell pl-4">
                 <span className="text-yellow-400">]</span>
               </span>
             </div>
             <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">15</span>
               <span className="table-cell">
                 <span className="text-yellow-400">{'}'}</span><span className="text-gray-400">;</span>
               </span>
@@ -102,213 +108,379 @@ const About: React.FC = () => {
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-cyan-400">type</span> <span className="text-yellow-300">Desenvolvedor</span> <span className="text-cyan-400">struct</span> <span className="text-white">{'{'}</span>
+                <span className="text-gray-500">// Structs para tipagem forte</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
-              <span className="table-cell pl-4">
-                <span className="text-white">Nome</span> <span className="text-green-400">string</span>
+              <span className="table-cell">
+                <span className="text-cyan-400">type</span> <span className="text-yellow-300">Educacao</span> <span className="text-cyan-400">struct</span> <span className="text-white">{'{'}</span> <span className="text-white">Curso, Status</span> <span className="text-green-400">string</span><span className="text-white">; Ano</span> <span className="text-green-400">int</span> <span className="text-white">{'}'}</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
-              <span className="table-cell pl-4">
-                <span className="text-white">Foco</span> <span className="text-green-400">string</span>
+              <span className="table-cell">
+                <span className="text-cyan-400">type</span> <span className="text-yellow-300">Dev</span> <span className="text-cyan-400">struct</span> <span className="text-white">{'{'}</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
               <span className="table-cell pl-4">
-                <span className="text-white">Stack</span> <span className="text-green-400">[]string</span>
+                 <span className="text-white">Nome, Foco, Spec</span> <span className="text-green-400">string</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
-              <span className="table-cell">
-                <span className="text-white">{'}'}</span>
+              <span className="table-cell pl-4">
+                 <span className="text-white">Formacao</span> <span className="text-yellow-300">Educacao</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
-              <span className="table-cell"></span>
+              <span className="table-cell pl-4">
+                 <span className="text-white">Hobbies</span> <span className="text-green-400">[]string</span>
+              </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
               <span className="table-cell">
-                <span className="text-cyan-400">func</span> <span className="text-yellow-300">main</span><span className="text-white">()</span> <span className="text-white">{'{'}</span>
-              </span>
-            </div>
-             <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
-              <span className="table-cell pl-4">
-                <span className="text-white">dev</span> <span className="text-white">:=</span> <span className="text-yellow-300">Desenvolvedor</span><span className="text-white">{'{'}</span>
+                <span className="text-white">{'}'}</span>
               </span>
             </div>
             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
+              <span className="table-cell"></span>
+            </div>
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
-              <span className="table-cell pl-8">
-                <span className="text-white">Nome:</span> <span className="text-green-300">"David Ben"</span><span className="text-white">,</span>
+              <span className="table-cell">
+                <span className="text-cyan-400">func</span> <span className="text-yellow-300">main</span><span className="text-white">() {</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
-              <span className="table-cell pl-8">
-                <span className="text-white">Foco:</span> <span className="text-green-300">"Backend & IA"</span><span className="text-white">,</span>
+              <span className="table-cell pl-4">
+                <span className="text-white">eu := </span><span className="text-yellow-300">Dev</span><span className="text-white">{'{'}</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
               <span className="table-cell pl-8">
-                <span className="text-white">Stack:</span> <span className="text-white">[]</span><span className="text-green-400">string</span><span className="text-white">{'{'}</span><span className="text-green-300">"Go"</span><span className="text-white">, </span><span className="text-green-300">"Node"</span><span className="text-white">, </span><span className="text-green-300">"AI"</span><span className="text-white">{'}'},</span>
+                <span className="text-white">Nome:</span> <span className="text-orange-300">"David Ben"</span><span className="text-white">,</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
-              <span className="table-cell pl-4">
-                <span className="text-white">{'}'}</span>
+              <span className="table-cell pl-8">
+                <span className="text-white">Foco:</span> <span className="text-orange-300">"Engenharia Backend"</span><span className="text-white">,</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
-              <span className="table-cell pl-4">
-                <span className="text-white">fmt.Printf(</span><span className="text-green-300">"%+v"</span><span className="text-white">, dev)</span>
+              <span className="table-cell pl-8">
+                <span className="text-white">Spec:</span> <span className="text-orange-300">"Web & IA"</span><span className="text-white">,</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
-              <span className="table-cell">
+              <span className="table-cell pl-8">
+                <span className="text-white">Formacao:</span> <span className="text-yellow-300">Educacao</span><span className="text-white">{'{'}</span><span className="text-orange-300">"CompSci"</span><span className="text-white">, </span><span className="text-orange-300">"Em curso"</span><span className="text-white">, </span><span className="text-purple-400">2029</span><span className="text-white">{'}'},</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">15</span>
+              <span className="table-cell pl-8">
+                <span className="text-white">Hobbies:</span> <span className="text-green-400">[]string</span><span className="text-white">{'{'}</span><span className="text-orange-300">"Música"</span><span className="text-white">, </span><span className="text-orange-300">"Código"</span><span className="text-white">, </span><span className="text-orange-300">"..."</span><span className="text-white">{'}'},</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">16</span>
+              <span className="table-cell pl-4">
                 <span className="text-white">{'}'}</span>
               </span>
             </div>
-          </>
-        );
-      
-      case 'Python':
-        return (
-          <>
              <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
-              <span className="table-cell">
-                <span className="text-blue-400">class</span> <span className="text-yellow-300">Engenheiro</span><span className="text-white">:</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">17</span>
               <span className="table-cell pl-4">
-                 <span className="text-blue-400">def</span> <span className="text-yellow-300">__init__</span><span className="text-white">(</span><span className="text-orange-400">self</span><span className="text-white">):</span>
+                <span className="text-white">fmt.Printf(</span><span className="text-orange-300">"%+v"</span><span className="text-white">, eu)</span>
               </span>
             </div>
             <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
-              <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.nome</span> <span className="text-white">=</span> <span className="text-green-300">"David Ben"</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
-              <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.paixao</span> <span className="text-white">=</span> <span className="text-green-300">"Prompts & Backend"</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
-              <span className="table-cell pl-8">
-                 <span className="text-orange-400">self</span><span className="text-white">.local</span> <span className="text-white">=</span> <span className="text-green-300">"Rio, Brasil"</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
-              <span className="table-cell"></span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
-              <span className="table-cell pl-4">
-                 <span className="text-blue-400">def</span> <span className="text-yellow-300">construir</span><span className="text-white">(</span><span className="text-orange-400">self</span><span className="text-white">):</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
-              <span className="table-cell pl-8">
-                 <span className="text-blue-400">return</span> <span className="text-green-300">"Soluções Escaláveis..."</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
-              <span className="table-cell"></span>
-            </div>
-             <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">18</span>
               <span className="table-cell">
-                 <span className="text-white">eu</span> <span className="text-white">=</span> <span className="text-yellow-300">Engenheiro</span><span className="text-white">()</span>
-              </span>
-            </div>
-            <div className="table-row">
-              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
-              <span className="table-cell">
-                 <span className="text-yellow-300">print</span><span className="text-white">(eu.__dict__)</span>
+                <span className="text-white">}</span>
               </span>
             </div>
           </>
         );
 
-      case 'Linux':
+      case 'Git':
         return (
           <>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
               <span className="table-cell">
-                <span className="text-green-400">david@ben:~$</span> <span className="text-white">whoami</span>
+                <span className="text-yellow-300">git</span> <span className="text-white">show HEAD:perfil.yaml</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
               <span className="table-cell">
-                <span className="text-gray-400">david_ben</span>
+                <span className="text-gray-500"># Dados rastreados no controle de versão</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
               <span className="table-cell"></span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
               <span className="table-cell">
-                <span className="text-green-400">david@ben:~$</span> <span className="text-white">cat carreira.txt</span>
+                <span className="text-sky-300">nome:</span> <span className="text-white">David Ben</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Ciência da Computação (2029)</span>
+                <span className="text-sky-300">foco:</span> <span className="text-white">Engenharia Backend</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Especialista em Backend</span>
+                <span className="text-sky-300">especialidade:</span> <span className="text-white">Desenvolvimento Web com IA</span>
               </span>
             </div>
             <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
               <span className="table-cell">
-                <span className="text-gray-400">{'>'} Integrador de IA & Prompts</span>
+                <span className="text-sky-300">educacao:</span>
               </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
-              <span className="table-cell"></span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">curso:</span> <span className="text-white">Ciência da Computação</span>
+              </span>
             </div>
-             <div className="table-row">
+            <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
+              <span className="table-cell pl-4">
+                <span className="text-sky-300">conclusao:</span> <span className="text-purple-400">2029</span> <span className="text-gray-500"># Em andamento</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
               <span className="table-cell">
-                <span className="text-green-400">david@ben:~$</span> <span className="text-white">uptime</span>
+                <span className="text-sky-300">hobbies:</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
+              <span className="table-cell pl-4">
+                <span className="text-white">- Música</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
+              <span className="table-cell pl-4">
+                <span className="text-white">- Código</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
+              <span className="table-cell pl-4">
+                <span className="text-white">- Atletismo</span> <span className="text-gray-500"># & Futebol</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
+              <span className="table-cell pl-4">
+                <span className="text-white">- Livros Científicos</span>
+              </span>
+            </div>
+          </>
+        );
+
+      case 'SQL':
+        return (
+          <>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
+              <span className="table-cell">
+                <span className="text-gray-500">-- Inserindo perfil com JSONB (Postgres)</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
+              <span className="table-cell">
+                <span className="text-purple-400">INSERT INTO</span> <span className="text-yellow-300">desenvolvedores</span> <span className="text-white">(</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
+              <span className="table-cell pl-4">
+                 <span className="text-white">nome, foco, especialidade, dados_extras</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
+              <span className="table-cell">
+                 <span className="text-white">) </span><span className="text-purple-400">VALUES</span> <span className="text-white">(</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
+              <span className="table-cell pl-4">
+                <span className="text-orange-300">'David Ben'</span><span className="text-white">,</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
+              <span className="table-cell pl-4">
+                <span className="text-orange-300">'Engenharia Backend'</span><span className="text-white">,</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
+              <span className="table-cell pl-4">
+                <span className="text-orange-300">'Desenvolvimento Web com IA'</span><span className="text-white">,</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
+              <span className="table-cell pl-4">
+                 <span className="text-orange-300">'{'{'}</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
+              <span className="table-cell pl-8">
+                 <span className="text-orange-300">"educacao": {'{'} "curso": "Ciência da Computação", "fim": 2029 {'}'},</span>
               </span>
             </div>
              <div className="table-row">
               <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
+              <span className="table-cell pl-8">
+                 <span className="text-orange-300">"hobbies": ["Música", "Código", "Futebol", "Ciência"]</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
+              <span className="table-cell pl-4">
+                 <span className="text-orange-300">{'}'}'::jsonb</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
               <span className="table-cell">
-                <span className="text-gray-400">  online 24h, 7 dias, focado 100%</span>
+                 <span className="text-white">);</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
+              <span className="table-cell"></span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
+              <span className="table-cell">
+                 <span className="text-gray-500">-- 1 linha afetada (sucesso)</span>
+              </span>
+            </div>
+          </>
+        );
+
+      case 'Docker':
+        return (
+          <>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">1</span>
+              <span className="table-cell">
+                <span className="text-gray-500"># Construindo a imagem do perfil</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">2</span>
+              <span className="table-cell">
+                <span className="text-purple-400">FROM</span> <span className="text-white">dev-base:latest</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">3</span>
+              <span className="table-cell">
+                <span className="text-purple-400">ENV</span> <span className="text-yellow-300">NOME</span><span className="text-white">=</span><span className="text-orange-300">"David Ben"</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">4</span>
+              <span className="table-cell">
+                <span className="text-purple-400">ENV</span> <span className="text-yellow-300">FOCO</span><span className="text-white">=</span><span className="text-orange-300">"Backend Engineering"</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
+              <span className="table-cell">
+                <span className="text-purple-400">ENV</span> <span className="text-yellow-300">SPEC</span><span className="text-white">=</span><span className="text-orange-300">"IA & Prompts"</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
+              <span className="table-cell"></span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
+              <span className="table-cell">
+                <span className="text-gray-500"># Metadados de Educação</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">8</span>
+              <span className="table-cell">
+                <span className="text-purple-400">LABEL</span> <span className="text-sky-300">curso</span><span className="text-white">=</span><span className="text-orange-300">"Ciência da Computação"</span> \
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">9</span>
+              <span className="table-cell pl-12">
+                 <span className="text-sky-300">status</span><span className="text-white">=</span><span className="text-orange-300">"Em andamento"</span> \
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
+              <span className="table-cell pl-12">
+                 <span className="text-sky-300">conclusao</span><span className="text-white">=</span><span className="text-orange-300">"2029"</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">11</span>
+              <span className="table-cell"></span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">12</span>
+              <span className="table-cell">
+                <span className="text-purple-400">RUN</span> <span className="text-white">apk add --no-cache \</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
+              <span className="table-cell pl-8">
+                <span className="text-white">musica codigo atletismo \</span>
+              </span>
+            </div>
+            <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">14</span>
+              <span className="table-cell pl-8">
+                <span className="text-white">futebol livros-cientificos</span>
+              </span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">15</span>
+              <span className="table-cell"></span>
+            </div>
+             <div className="table-row">
+              <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">16</span>
+              <span className="table-cell">
+                <span className="text-purple-400">CMD</span> <span className="text-white">["./david-ben", "--start-coding"]</span>
               </span>
             </div>
           </>
@@ -372,7 +544,7 @@ const About: React.FC = () => {
 
               {/* Tabs */}
               <div className="flex border-b border-gray-800 bg-[#111]">
-                {(['TypeScript', 'Golang', 'Python', 'Linux'] as CodeTab[]).map((tab) => (
+                {(['TypeScript', 'Golang', 'Git', 'SQL', 'Docker'] as CodeTab[]).map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}

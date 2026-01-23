@@ -74,7 +74,10 @@ const Projects: React.FC = () => {
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="flex flex-col mb-16">
           <span className="text-accent text-sm tracking-widest mb-2 font-mono">PORTFOLIO</span>
-          <h2 className="text-4xl font-bold text-white tracking-tight">Meus Projetos</h2>
+          <div className="flex items-center gap-2">
+            <span className="h-px w-8 bg-accent"></span>
+            <h2 className="text-4xl font-bold text-white tracking-tight">Meus Projetos</h2>
+          </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

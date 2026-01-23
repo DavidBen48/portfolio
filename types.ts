@@ -1,3 +1,4 @@
+
 export interface Project {
   id: number;
   title: string;
@@ -14,4 +15,4 @@ export interface Skill {
   score: number; // 1 a 4
 }
 
-export type CodeTab = 'TypeScript' | 'Golang' | 'Python' | 'Linux';
+export type CodeTab = 'TypeScript' | 'Golang' | 'Git' | 'SQL' | 'Docker';
