@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { SKILLS } from '../constants';
-import { Code, Hash, Terminal, Cpu } from 'lucide-react';
+import { Code, Cpu } from 'lucide-react';
 
 const TechStack: React.FC = () => {
   const [offset, setOffset] = useState(0);

@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Mail, Send, ChevronRight } from 'lucide-react';
+import { Send } from 'lucide-react';
 
 const Contact: React.FC = () => {
   const [formState, setFormState] = useState({ name: '', email: '', message: '' });

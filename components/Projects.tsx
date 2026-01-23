@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { ExternalLink, Github, Database, Layers, Lock, Terminal, Box, Grid, MousePointerClick } from 'lucide-react';
+import { ExternalLink, Layers, Box, Grid } from 'lucide-react';
 import { PROJECTS } from '../constants';
 
 const Projects: React.FC = () => {
