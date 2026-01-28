@@ -76,7 +76,7 @@ const TypeGo: React.FC = () => {
       <div className="table-row">
         <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">13</span>
         <span className="table-cell pl-8">
-          <span className="text-white">Spec:</span> <span className="text-orange-300">"Web & IA"</span><span className="text-white">,</span>
+          <span className="text-white">Spec:</span> <span className="text-orange-300">"Backend & Data"</span><span className="text-white">,</span>
         </span>
       </div>
       <div className="table-row">

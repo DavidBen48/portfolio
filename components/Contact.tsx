@@ -56,7 +56,7 @@ const Contact: React.FC = () => {
 
                 {/* Quote */}
                 <div>
-                   <span className="text-sky-400">"quote"</span><span className="text-gray-400">:</span>
+                   <span className="text-sky-400">"message"</span><span className="text-gray-400">:</span>
                    <p className="text-white mt-1 pl-2 italic leading-relaxed">
                      "Um ótimo código é apenas o pensamento tornado executável."
                    </p>

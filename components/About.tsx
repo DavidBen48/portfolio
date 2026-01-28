@@ -43,13 +43,13 @@ const About: React.FC = () => {
               
               <div className="pl-6 border-l border-gray-800 ml-3 space-y-4">
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Curso <span className="text-white font-medium">Ciência da Computação</span> (formação prevista para 2029) com foco absoluto em engenharia backend e arquitetura de software.
+                  Curso <span className="text-white font-medium">Ciência da Computação</span> (formação prevista para 2029), consolidando a base algorítmica necessária para resolver problemas complexos de software.
                 </p>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                  Possuo expertise avançada em <span className="text-accent font-medium">Inteligência Artificial Generativa</span> para desenvolvimento web, dominando a criação de prompts complexos para maximizar a produtividade e qualidade do código.
+                  Minha atuação central é como <span className="text-accent font-medium">Backend Developer</span>. Desenvolvo APIs robustas, gerencio bancos de dados relacionais e não-relacionais, e orquestro microsserviços para garantir que a infraestrutura suporte escalabilidade e segurança.
                 </p>
                 <p className="text-gray-300 leading-relaxed text-lg">
-                   Atuo na interseção entre código robusto e automação inteligente.
+                   Tenho forte expertise em <span className="text-accent font-medium">Análise de Dados e Dashboards</span>. Utilizo Python, SQL e ferramentas de BI para construir pipelines de ETL e visualizações estratégicas, transformando dados brutos em métricas claras para tomada de decisão.
                 </p>
               </div>
 
@@ -59,7 +59,7 @@ const About: React.FC = () => {
             <div className="mt-8 flex gap-3 text-gray-500 text-base leading-relaxed">
               <span className="text-gray-600 font-bold select-none">//</span>
               <p>
-                Minha missão é construir sistemas que não apenas funcionem, mas que sejam inteligentes, escaláveis e resilientes.
+                Construo a lógica do sistema e traduzo dados em estratégia. Onde há código e dados, há soluções.
               </p>
             </div>
           </div>

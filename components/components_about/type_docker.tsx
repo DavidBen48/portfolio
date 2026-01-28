@@ -30,7 +30,7 @@ const TypeDocker: React.FC = () => {
        <div className="table-row">
         <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">5</span>
         <span className="table-cell">
-          <span className="text-purple-400">ENV</span> <span className="text-yellow-300">SPEC</span><span className="text-white">=</span><span className="text-orange-300">"IA & Prompts"</span>
+          <span className="text-purple-400">ENV</span> <span className="text-yellow-300">SPEC</span><span className="text-white">=</span><span className="text-orange-300">"DataOps & Backend"</span>
         </span>
       </div>
       <div className="table-row">

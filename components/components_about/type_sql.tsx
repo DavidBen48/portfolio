@@ -42,7 +42,7 @@ const TypeSQL: React.FC = () => {
       <div className="table-row">
         <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">7</span>
         <span className="table-cell pl-4">
-          <span className="text-orange-300">'Desenvolvimento Web com IA'</span><span className="text-white">,</span>
+          <span className="text-orange-300">'Analise de Dados'</span><span className="text-white">,</span>
         </span>
       </div>
       <div className="table-row">

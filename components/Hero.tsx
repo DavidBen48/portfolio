@@ -83,11 +83,11 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           </h1>
           
           <h2 className="text-xl md:text-2xl text-gray-400 font-light mt-2">
-            Ciência da Computação - Engenheiro Backend
+            Desenvolvedor Backend | Analista de Dados
           </h2>
 
           <p className="max-w-2xl text-gray-500 mt-6 leading-relaxed border-l-2 border-accent/50 pl-4 md:ml-0 mx-auto text-left">
-            "Arquitetando sistemas escaláveis e soluções de software eficientes através de código e lógica."
+            "Arquitetando sistemas escaláveis e transformando dados complexos em inteligência de negócio."
           </p>
 
           <div className="flex flex-col md:flex-row gap-6 mt-12 items-start md:items-center">

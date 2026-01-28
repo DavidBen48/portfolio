@@ -34,7 +34,7 @@ const TypeGit: React.FC = () => {
       <div className="table-row">
         <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">6</span>
         <span className="table-cell">
-          <span className="text-sky-300">especialidade:</span> <span className="text-white">Desenvolvimento Web com IA</span>
+          <span className="text-sky-300">especialidade:</span> <span className="text-white">Engenharia de Dados & APIs</span>
         </span>
       </div>
       <div className="table-row">

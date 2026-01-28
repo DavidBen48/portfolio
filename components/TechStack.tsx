@@ -5,11 +5,12 @@ import { Code, Cpu } from 'lucide-react';
 const TechStack: React.FC = () => {
   const [offset, setOffset] = useState(0);
 
-  // Adjusted Slicing for new constants array structure (Supabase added)
+  // Adjusted Slicing including Data Skills
   const backendSkills = SKILLS.slice(0, 5);
   const infraSkills = SKILLS.slice(5, 9);
-  const aiSkills = SKILLS.slice(9, 13);
-  const frontendSkills = SKILLS.slice(13, 17);
+  const dataSkills = SKILLS.slice(9, 15);
+  const aiSkills = SKILLS.slice(15, 19);
+  const frontendSkills = SKILLS.slice(19, 23);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -98,6 +99,7 @@ const TechStack: React.FC = () => {
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-16">
           {renderSkillGroup("Backend Engineering", backendSkills)}
           {renderSkillGroup("Infrastructure & Database", infraSkills)}
+          {renderSkillGroup("Data Engineering & Analytics", dataSkills)}
           {renderSkillGroup("AI Workflow & Tools", aiSkills)}
           {renderSkillGroup("Frontend Ecosystem", frontendSkills)}
         </div>

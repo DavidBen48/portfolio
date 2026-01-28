@@ -49,7 +49,7 @@ export const PROJECTS: Project[] = [
   }
 ];
 
-// Ordem: Backend, Infra, AI, Frontend
+// Ordem: Backend, Infra, Data, AI, Frontend
 export const SKILLS: Skill[] = [
   // Backend Engineering (5 itens) - Indices 0-4
   { name: "TypeScript", level: "Intermediate", score: 4 },
@@ -64,13 +64,21 @@ export const SKILLS: Skill[] = [
   { name: "MongoDB", level: "Basic", score: 3 },
   { name: "Docker", level: "Basic", score: 2 },
 
-  // AI Workflow (4 itens) - Indices 9-12
+  // Data Engineering & Analytics (6 itens) - Indices 9-14
+  { name: "Python & Pandas", level: "Intermediate", score: 4 },
+  { name: "NumPy & PySpark", level: "Intermediate", score: 3 },
+  { name: "ETL Processes", level: "Basic", score: 2 },
+  { name: "Data Lake/Warehouse", level: "Basic", score: 3 },
+  { name: "PowerBI", level: "Basic", score: 3 },
+  { name: "Google Cloud", level: "Basic", score: 2 },
+
+  // AI Workflow (4 itens) - Indices 15-18
   { name: "AI Studio", level: "Intermediate", score: 5 },
   { name: "Lovable", level: "Intermediate", score: 4 },
   { name: "Cursor", level: "Intermediate", score: 3 },
   { name: "Windsurf", level: "Basic", score: 2 },
 
-  // Frontend Ecosystem (4 itens) - Indices 13-16
+  // Frontend Ecosystem (4 itens) - Indices 19-22
   { name: "Javascript", level: "Intermediate", score: 4 },
   { name: "Tailwind", level: "Intermediate", score: 3 },
   { name: "Bootstrap", level: "Intermediate", score: 3 },

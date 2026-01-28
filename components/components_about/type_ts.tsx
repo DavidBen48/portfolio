@@ -60,7 +60,7 @@ const TypeTS: React.FC = () => {
       <div className="table-row">
         <span className="table-cell select-none text-gray-700 w-8 text-right pr-4">10</span>
         <span className="table-cell pl-4">
-          <span className="text-sky-300">especialidade</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Desenvolvimento Web com IA"</span><span className="text-gray-400">,</span>
+          <span className="text-sky-300">especialidade</span><span className="text-gray-400">:</span> <span className="text-orange-300">"Backend & Data Analytics"</span><span className="text-gray-400">,</span>
         </span>
       </div>
       <div className="table-row">
