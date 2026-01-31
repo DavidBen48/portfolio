@@ -8,35 +8,40 @@ export const PROJECTS: Project[] = [
     description: "Sistema CRUD com HTTP Request para análise de desempenho de alunos e gestão de notas por matéria.",
     stack: ["TypeScript", "NestJS", "Express", "MongoDB", "Swagger"],
     status: "COMPLETED",
-    repoUrl: "https://github.com/DavidBen48/Boletim-Escolar-API-basico"
+    repoUrl: "https://github.com/DavidBen48/Boletim-Escolar-API-basico",
+    category: "TypeScript & NestJS"
   },
   {
     id: 2,
     title: "CLI de Gerenciamento de Tarefas",
     description: "Ferramenta de linha de comando para gerenciar tarefas em alta performance.",
     stack: ["Golang", "Cobra CLI", "JSON", "OS", "Testing"],
-    status: "IN_PROGRESS"
+    status: "IN_PROGRESS",
+    category: "Golang"
   },
   {
     id: 3,
-    title: "Sistema de Gerenciamento de Pedidos",
-    description: "Focado em regras de negócio complexas e arquitetura modular, simulando um e-commerce real.",
-    stack: ["Node.js", "TypeScript", "NestJS", "Prisma", "PostgreSQL"],
-    status: "STRUCTURING"
+    title: "Gerenciador de Perfis de Usuários",
+    description: "Microserviço responsável pelo gerenciamento de perfis de usuários, incluindo criação, atualização, consulta e desativação de contas. Exposto via API REST.",
+    stack: ["Golang", "Gin", "MongoDB", "env", "JWT", "Docker", "Swagger"],
+    status: "IN_PROGRESS",
+    category: "Golang"
   },
   {
     id: 4,
     title: "API de Autenticação",
     description: "Sistema de login seguro, registro de usuários e controle de acesso a recursos protegidos.",
     stack: ["Golang", "Net/Http", "Gin", "MongoDB", "Swagger"],
-    status: "STRUCTURING"
+    status: "STRUCTURING",
+    category: "Golang"
   },
   {
     id: 5,
     title: "API de Clima",
     description: "Sistema que indica o clima em um lugar especificado pelo usuário.",
     stack: ["TypeScript", "NestJS", "Docker", "Axios", "ConfigModule"],
-    status: "STRUCTURING"
+    status: "STRUCTURING",
+    category: "TypeScript & NestJS"
   },
   {
     id: 6,
@@ -45,7 +50,18 @@ export const PROJECTS: Project[] = [
     stack: ["React", "NextJS", "Framer Motion", "Radix UI", "TailwindCSS", "API Whatsapp"],
     status: "COMPLETED",
     repoUrl: "https://github.com/DavidBen48/connect-sao-bento",
-    deployUrl: "https://connect-saobento.vercel.app/"
+    deployUrl: "https://connect-saobento.vercel.app/",
+    category: "FullStack (AI-Powered)"
+  },
+  {
+    id: 7,
+    title: "Members.AI",
+    description: "Serviço freelancer de sistema CRUD, restrito, de membros ativos de uma instituição religiosa.",
+    stack: ["React", "NextJS", "TypeScript", "TailwindCSS", "Framer Motion", "Radix UI", "Auth", "Supabase", "Google Maps API", "OpenStreetMap API"],
+    status: "COMPLETED",
+    repoUrl: "https://github.com/DavidBen48/adepa-freifabiano",
+    deployUrl: "https://adepa-freifabiano.vercel.app/",
+    category: "FullStack (AI-Powered)"
   }
 ];
 

@@ -1,13 +1,16 @@
 
 export interface Project {
-  id: number;
+  id: number; // Internal ID
   title: string;
   description: string;
   stack: string[];
   status: 'COMPLETED' | 'IN_PROGRESS' | 'STRUCTURING';
   repoUrl?: string;
   deployUrl?: string;
+  category: ProjectCategory;
 }
+
+export type ProjectCategory = 'TypeScript & NestJS' | 'Golang' | 'FullStack (AI-Powered)';
 
 export interface Skill {
   name: string;

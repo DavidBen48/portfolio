@@ -1,9 +1,12 @@
+
 import React, { useEffect, useState } from 'react';
 import { ExternalLink, Layers, Box, Grid } from 'lucide-react';
 import { PROJECTS } from '../constants';
+import { ProjectCategory } from '../types';
 
 const Projects: React.FC = () => {
   const [offset, setOffset] = useState(0);
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('TypeScript & NestJS');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -22,6 +25,14 @@ const Projects: React.FC = () => {
       default: return status;
     }
   };
+
+  const categories: ProjectCategory[] = [
+    "TypeScript & NestJS",
+    "Golang",
+    "FullStack (AI-Powered)"
+  ];
+
+  const filteredProjects = PROJECTS.filter(project => project.category === activeCategory);
 
   return (
     <section id="projects" className="py-24 relative overflow-hidden bg-[#0a0a0a]">
@@ -72,16 +83,37 @@ const Projects: React.FC = () => {
       </div>
       
       <div className="max-w-7xl mx-auto px-6 relative z-10">
-        <div className="flex flex-col mb-16">
+        <div className="flex flex-col mb-12">
           <span className="text-accent text-sm tracking-widest mb-2 font-mono">PORTFOLIO</span>
-          <div className="flex items-center gap-2">
+          <div className="flex items-center gap-2 mb-8">
             <span className="h-px w-8 bg-accent"></span>
             <h2 className="text-4xl font-bold text-white tracking-tight">Meus Projetos</h2>
+          </div>
+
+          {/* Category Tabs */}
+          <div className="flex flex-wrap gap-4">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`
+                  px-6 py-2 border text-sm font-mono uppercase tracking-wider transition-all duration-300
+                  ${activeCategory === category 
+                    ? 'bg-accent text-black border-accent font-bold shadow-[0_0_15px_rgba(34,197,94,0.4)]' 
+                    : 'bg-transparent text-gray-400 border-gray-800 hover:border-accent hover:text-white'}
+                `}
+              >
+                {category}
+              </button>
+            ))}
           </div>
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {PROJECTS.map((project) => {
+          {filteredProjects.map((project, index) => {
+            // Visual ID resets for each category
+            const displayId = index + 1;
+
             return (
               <div 
                 key={project.id}
@@ -90,11 +122,11 @@ const Projects: React.FC = () => {
                 <div className="space-y-1 leading-relaxed break-words">
                   <span className="text-yellow-500">{'{'}</span>
                   
-                  {/* ID */}
+                  {/* ID (Display ID) */}
                   <div className="pl-4">
                     <span className="text-sky-400">"id"</span>
                     <span className="text-gray-400">: </span>
-                    <span className="text-purple-400">{project.id}</span>
+                    <span className="text-purple-400">{displayId}</span>
                     <span className="text-gray-400">,</span>
                   </div>
 
