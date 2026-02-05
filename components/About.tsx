@@ -1,7 +1,8 @@
+
 import React, { useState } from 'react';
 import { CodeTab } from '../types';
 import TypeTS from './components_about/type_ts';
-import TypeGo from './components_about/type_go';
+import TypeNode from './components_about/type_node';
 import TypeGit from './components_about/type_git';
 import TypeSQL from './components_about/type_sql';
 import TypeDocker from './components_about/type_docker';
@@ -13,8 +14,8 @@ const About: React.FC = () => {
     switch (activeTab) {
       case 'TypeScript':
         return <TypeTS />;
-      case 'Golang':
-        return <TypeGo />;
+      case 'NodeJS':
+        return <TypeNode />;
       case 'Git':
         return <TypeGit />;
       case 'SQL':
@@ -79,7 +80,7 @@ const About: React.FC = () => {
 
               {/* Tabs */}
               <div className="flex border-b border-gray-800 bg-[#111]">
-                {(['TypeScript', 'Golang', 'Git', 'SQL', 'Docker'] as CodeTab[]).map((tab) => (
+                {(['TypeScript', 'NodeJS', 'Git', 'SQL', 'Docker'] as CodeTab[]).map((tab) => (
                   <button
                     key={tab}
                     onClick={() => setActiveTab(tab)}

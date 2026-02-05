@@ -10,7 +10,7 @@ export interface Project {
   category: ProjectCategory;
 }
 
-export type ProjectCategory = 'TypeScript & NestJS' | 'Golang' | 'FullStack (AI-Powered)';
+export type ProjectCategory = 'TypeScript & NestJS' | 'NodeJS' | 'FullStack (AI-Powered)';
 
 export interface Skill {
   name: string;
@@ -18,4 +18,4 @@ export interface Skill {
   score: number; // 1 a 4
 }
 
-export type CodeTab = 'TypeScript' | 'Golang' | 'Git' | 'SQL' | 'Docker';
+export type CodeTab = 'TypeScript' | 'NodeJS' | 'Git' | 'SQL' | 'Docker';

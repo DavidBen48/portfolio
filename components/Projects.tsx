@@ -6,7 +6,7 @@ import { ProjectCategory } from '../types';
 
 const Projects: React.FC = () => {
   const [offset, setOffset] = useState(0);
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('TypeScript & NestJS');
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('NodeJS');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -28,7 +28,7 @@ const Projects: React.FC = () => {
 
   const categories: ProjectCategory[] = [
     "TypeScript & NestJS",
-    "Golang",
+    "NodeJS",
     "FullStack (AI-Powered)"
   ];
 

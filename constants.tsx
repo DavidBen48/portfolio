@@ -2,6 +2,7 @@
 import { Project, Skill } from './types';
 
 export const PROJECTS: Project[] = [
+  // --- TypeScript & NestJS ---
   {
     id: 1,
     title: "Sistema de Boletim API",
@@ -13,30 +14,6 @@ export const PROJECTS: Project[] = [
   },
   {
     id: 2,
-    title: "CLI de Gerenciamento de Tarefas",
-    description: "Ferramenta de linha de comando para gerenciar tarefas em alta performance.",
-    stack: ["Golang", "Cobra CLI", "JSON", "OS", "Testing"],
-    status: "IN_PROGRESS",
-    category: "Golang"
-  },
-  {
-    id: 3,
-    title: "Gerenciador de Perfis de Usuários",
-    description: "Microserviço responsável pelo gerenciamento de perfis de usuários, incluindo criação, atualização, consulta e desativação de contas. Exposto via API REST.",
-    stack: ["Golang", "Gin", "MongoDB", "env", "JWT", "Docker", "Swagger"],
-    status: "IN_PROGRESS",
-    category: "Golang"
-  },
-  {
-    id: 4,
-    title: "API de Autenticação",
-    description: "Sistema de login seguro, registro de usuários e controle de acesso a recursos protegidos.",
-    stack: ["Golang", "Net/Http", "Gin", "MongoDB", "Swagger"],
-    status: "STRUCTURING",
-    category: "Golang"
-  },
-  {
-    id: 5,
     title: "API de Clima",
     description: "Sistema que indica o clima em um lugar especificado pelo usuário.",
     stack: ["TypeScript", "NestJS", "Docker", "Axios", "ConfigModule"],
@@ -44,7 +21,43 @@ export const PROJECTS: Project[] = [
     category: "TypeScript & NestJS"
   },
   {
+    id: 3,
+    title: "AuthGuard Microservice",
+    description: "Sistema robusto de autenticação e autorização (RBAC) com validação de tokens e guards personalizados.",
+    stack: ["TypeScript", "NestJS", "Passport", "JWT", "Bcrypt", "PostgreSQL"],
+    status: "IN_PROGRESS",
+    category: "TypeScript & NestJS"
+  },
+
+  // --- NodeJS (Replacement for Golang) ---
+  {
+    id: 4,
+    title: "Task List API (Simple)",
+    description: "API RESTful leve para gerenciamento de tarefas, focado em manipulação de rotas e persistência básica.",
+    stack: ["NodeJS", "Express", "FileSystem", "JSON"],
+    status: "IN_PROGRESS",
+    category: "NodeJS"
+  },
+  {
+    id: 5,
+    title: "Blog Content API (Medium)",
+    description: "API para gerenciamento de postagens e comentários, incluindo upload de imagens e filtragem de conteúdo.",
+    stack: ["NodeJS", "Express", "MongoDB", "Mongoose", "Multer"],
+    status: "IN_PROGRESS",
+    category: "NodeJS"
+  },
+  {
     id: 6,
+    title: "Secure Auth System (Hard)",
+    description: "Sistema complexo de autenticação: Registro, Login, Refresh Token, Rate Limiting e cobertura de testes automatizados.",
+    stack: ["NodeJS", "Express", "Jest", "Supertest", "PostgreSQL", "Sequelize", "JWT"],
+    status: "IN_PROGRESS",
+    category: "NodeJS"
+  },
+
+  // --- FullStack ---
+  {
+    id: 7,
     title: "Loja de Roupa Connect",
     description: "Um serviço freelance que fiz sob encomenda para um evento em específico, utilizando IA.",
     stack: ["React", "NextJS", "Framer Motion", "Radix UI", "TailwindCSS", "API Whatsapp"],
@@ -54,7 +67,7 @@ export const PROJECTS: Project[] = [
     category: "FullStack (AI-Powered)"
   },
   {
-    id: 7,
+    id: 8,
     title: "Members.AI",
     description: "Serviço freelancer de sistema CRUD, restrito, de membros ativos de uma instituição religiosa.",
     stack: ["React", "NextJS", "TypeScript", "TailwindCSS", "Framer Motion", "Radix UI", "Auth", "Supabase", "Google Maps API", "OpenStreetMap API"],
@@ -67,20 +80,20 @@ export const PROJECTS: Project[] = [
 
 // Ordem: Backend, Infra, Data, AI, Frontend
 export const SKILLS: Skill[] = [
-  // Backend Engineering (5 itens) - Indices 0-4
+  // Backend Engineering (5 itens)
+  { name: "NodeJS", level: "Intermediate", score: 4 },
   { name: "TypeScript", level: "Intermediate", score: 4 },
   { name: "NestJS", level: "Intermediate", score: 3 },
-  { name: "NodeJS", level: "Intermediate", score: 2 },
-  { name: "Golang", level: "Intermediate", score: 3 },
-  { name: "JSON", level: "Intermediate", score: 3 },
+  { name: "Express", level: "Intermediate", score: 4 },
+  { name: "Jest/Testing", level: "Intermediate", score: 3 },
   
-  // Infrastructure & DB (4 itens) - Indices 5-8
+  // Infrastructure & DB (4 itens)
   { name: "PostgreSQL", level: "Basic", score: 4 },
   { name: "Supabase", level: "Basic", score: 3 },
   { name: "MongoDB", level: "Basic", score: 3 },
   { name: "Docker", level: "Basic", score: 2 },
 
-  // Data Engineering & Analytics (6 itens) - Indices 9-14
+  // Data Engineering & Analytics (6 itens)
   { name: "Python & Pandas", level: "Intermediate", score: 4 },
   { name: "NumPy & PySpark", level: "Intermediate", score: 3 },
   { name: "ETL Processes", level: "Basic", score: 2 },
@@ -88,15 +101,15 @@ export const SKILLS: Skill[] = [
   { name: "PowerBI", level: "Basic", score: 3 },
   { name: "Google Cloud", level: "Basic", score: 2 },
 
-  // AI Workflow (4 itens) - Indices 15-18
+  // AI Workflow (4 itens)
   { name: "AI Studio", level: "Intermediate", score: 5 },
   { name: "Lovable", level: "Intermediate", score: 4 },
   { name: "Cursor", level: "Intermediate", score: 3 },
   { name: "Windsurf", level: "Basic", score: 2 },
 
-  // Frontend Ecosystem (4 itens) - Indices 19-22
+  // Frontend Ecosystem (4 itens)
   { name: "Javascript", level: "Intermediate", score: 4 },
   { name: "Tailwind", level: "Intermediate", score: 3 },
-  { name: "Bootstrap", level: "Intermediate", score: 3 },
-  { name: "React", level: "Basic", score: 2 },
+  { name: "React", level: "Basic", score: 3 },
+  { name: "NextJS", level: "Basic", score: 3 },
 ];
