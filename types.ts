@@ -10,12 +10,23 @@ export interface Project {
   category: ProjectCategory;
 }
 
-export type ProjectCategory = 'TypeScript & NestJS' | 'NodeJS' | 'FullStack (AI-Powered)';
+export type ProjectCategory = 
+  | 'Python'
+  | 'Golang'
+  | 'MySQL && JSON'
+  | 'Network'
+  | 'Backend Developer'
+  | 'Freelancer (fullstack ai-powered)';
 
 export interface Skill {
   name: string;
-  level: 'Intermediate' | 'Basic'; // Mantido para compatibilidade, mas usaremos score visualmente
-  score: number; // 1 a 4
+  score: number; // 1 a 5
 }
 
-export type CodeTab = 'TypeScript' | 'NodeJS' | 'Git' | 'SQL' | 'Docker';
+export interface SkillGroup {
+  title: string;
+  skills: Skill[];
+}
+
+export type CodeTab = 'Python' | 'Golang' | 'SQL' | 'JSON' | 'Linux';
+

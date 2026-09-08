@@ -1,5 +1,6 @@
 {
-  "name": "David Ben Portfolio",
-  "description": "Professional Backend Engineer Portfolio featuring a CLI-inspired design, interactive terminal profile, and project showcase.",
-  "requestFramePermissions": []
+  "name": "David Ben - Analista de TI & Datacenter N1 | DevSecOps",
+  "description": "Portfólio de David Ben: Analista de TI e Datacenter N1 na OTG, estudante de Segurança Cibernética na IPOG, focado em DevSecOps, Linux, Redes e Automação em Python e Golang.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

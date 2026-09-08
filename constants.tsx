@@ -1,115 +1,161 @@
 
-import { Project, Skill } from './types';
+import { Project, Skill, SkillGroup } from './types';
 
 export const PROJECTS: Project[] = [
-  // --- TypeScript & NestJS ---
+  // --- Python ---
   {
     id: 1,
-    title: "Sistema de Boletim API",
-    description: "Sistema CRUD com HTTP Request para análise de desempenho de alunos e gestão de notas por matéria.",
-    stack: ["TypeScript", "NestJS", "Express", "MongoDB", "Swagger"],
+    title: "Monitor de Saúde de Servidores",
+    description: "Monitor de telemetria e métricas de servidores locais e remotos, coletando uso de CPU, memória, disco e rede com persistência em JSON e logs estruturados.",
+    stack: ["Python", "psutil", "JSON", "argparse", "logging"],
     status: "COMPLETED",
-    repoUrl: "https://github.com/DavidBen48/Boletim-Escolar-API-basico",
-    category: "TypeScript & NestJS"
+    category: "Python"
   },
+
+  // --- Golang ---
   {
     id: 2,
-    title: "API de Clima",
-    description: "Sistema que indica o clima em um lugar especificado pelo usuário.",
-    stack: ["TypeScript", "NestJS", "Docker", "Axios", "ConfigModule"],
-    status: "STRUCTURING",
-    category: "TypeScript & NestJS"
+    title: "API de Monitoramento de Infraestrutura",
+    description: "API RESTful resiliente para coleta e consulta de telemetria de nós e serviços, com middlewares de autenticação, logging estruturado e suporte a contêineres.",
+    stack: ["Go", "Gin", "REST API", "JSON", "PostgreSQL/MySQL", "Docker", "Docker Compose", "logging", "middleware"],
+    status: "COMPLETED",
+    category: "Golang"
   },
   {
     id: 3,
-    title: "AuthGuard Microservice",
-    description: "Sistema robusto de autenticação e autorização (RBAC) com validação de tokens e guards personalizados.",
-    stack: ["TypeScript", "NestJS", "Passport", "JWT", "Bcrypt", "PostgreSQL"],
+    title: "Log Analyzer em Go",
+    description: "Ferramenta CLI de alta velocidade para parsing concorrente de arquivos massivos de logs (syslog, web servers e firewalls) com identificação de anomalias.",
+    stack: ["Go", "Concurrency", "Regex", "CLI", "Log Parsing"],
     status: "IN_PROGRESS",
-    category: "TypeScript & NestJS"
+    category: "Golang"
   },
 
-  // --- NodeJS (Replacement for Golang) ---
+  // --- MySQL && JSON ---
   {
     id: 4,
-    title: "Task List API (Simple)",
-    description: "API RESTful leve para gerenciamento de tarefas, focado em manipulação de rotas e persistência básica.",
-    stack: ["NodeJS", "Express", "FileSystem", "JSON"],
-    status: "IN_PROGRESS",
-    category: "NodeJS"
+    title: "Sistema de Inventário de Datacenter",
+    description: "Banco relacional modelado para catalogação física e lógica de ativos críticos de datacenter: servidores, blades, enclosures, storages e switches.",
+    stack: ["MySQL", "Modelagem", "Relacionamentos", "JOINs", "Índices", "Constraints", "Views", "Procedures"],
+    status: "COMPLETED",
+    category: "MySQL && JSON"
   },
   {
     id: 5,
-    title: "Blog Content API (Medium)",
-    description: "API para gerenciamento de postagens e comentários, incluindo upload de imagens e filtragem de conteúdo.",
-    stack: ["NodeJS", "Express", "MongoDB", "Mongoose", "Multer"],
+    title: "Configuration Manager",
+    description: "Gerenciador e orquestrador de arquivos de configuração para servidores e equipamentos de rede, com validação de schemas JSON e automação operacional.",
+    stack: ["Python", "JSON", "Automation", "SysAdmin"],
     status: "IN_PROGRESS",
-    category: "NodeJS"
+    category: "MySQL && JSON"
   },
   {
     id: 6,
-    title: "Secure Auth System (Hard)",
-    description: "Sistema complexo de autenticação: Registro, Login, Refresh Token, Rate Limiting e cobertura de testes automatizados.",
-    stack: ["NodeJS", "Express", "Jest", "Supertest", "PostgreSQL", "Sequelize", "JWT"],
+    title: "API JSON Data Processor",
+    description: "Serviço de ingestão, sanitização e processamento em lote de payloads JSON de telemetria de rede e infraestrutura para inserção em bancos relacionais.",
+    stack: ["JSON", "MySQL", "REST API", "Data Processing", "ETL"],
     status: "IN_PROGRESS",
-    category: "NodeJS"
+    category: "MySQL && JSON"
   },
 
-  // --- FullStack ---
+  // --- Network ---
   {
     id: 7,
-    title: "Loja de Roupa Connect",
-    description: "Um serviço freelance que fiz sob encomenda para um evento em específico, utilizando IA.",
-    stack: ["React", "NextJS", "Framer Motion", "Radix UI", "TailwindCSS", "API Whatsapp"],
+    title: "Rede Empresarial Segmentada",
+    description: "Arquitetura e simulação de topologia corporativa com divisão por VLANs, roteamento inter-VLAN, listas de controle de acesso (ACLs) e isolamento de tráfego sensível.",
+    stack: ["Cisco Packet Tracer", "VLANs", "ACLs", "Inter-VLAN", "Switching", "Security"],
     status: "COMPLETED",
-    repoUrl: "https://github.com/DavidBen48/connect-sao-bento",
-    deployUrl: "https://connect-saobento.vercel.app/",
-    category: "FullStack (AI-Powered)"
+    category: "Network"
   },
   {
     id: 8,
-    title: "Members.AI",
-    description: "Serviço freelancer de sistema CRUD, restrito, de membros ativos de uma instituição religiosa.",
-    stack: ["React", "NextJS", "TypeScript", "TailwindCSS", "Framer Motion", "Radix UI", "Auth", "Supabase", "Google Maps API", "OpenStreetMap API"],
+    title: "Rede Corporativa Multi-Site",
+    description: "Interligação de redes distribuídas (matriz e filiais) através de túneis VPN IPSec, roteamento dinâmico redundante (OSPF/BGP) e políticas de firewall de borda.",
+    stack: ["Networking", "VPN IPSec", "Routing (OSPF/BGP)", "Firewall", "High Availability"],
+    status: "IN_PROGRESS",
+    category: "Network"
+  },
+
+  // --- Backend Developer ---
+  {
+    id: 9,
+    title: "IT Asset Management API",
+    description: "API de ciclo de vida completo para gestão de ativos de TI: histórico de intervenções on-site, chamados críticos, substituição de peças e monitoramento de garantia.",
+    stack: ["Backend", "REST API", "Python / Go", "MySQL", "Hardware Lifecycle"],
+    status: "IN_PROGRESS",
+    category: "Backend Developer"
+  },
+
+  // --- Freelancer (fullstack ai-powered) ---
+  {
+    id: 10,
+    title: "Frei APP - Controle de Membros",
+    description: "Controle e gestão de membros de uma instituição religiosa com autenticação restrita, relatórios em PDF, integração ViaCEP, Recharts e banco em nuvem.",
+    stack: [
+      "React 19",
+      "TypeScript",
+      "Vite 6",
+      "Tailwind CSS v4",
+      "Recharts",
+      "Node.js",
+      "Express 4.x",
+      "Proxy Reverso Vite",
+      "Cloud Database",
+      "jsPDF",
+      "ViaCEP API"
+    ],
     status: "COMPLETED",
     repoUrl: "https://github.com/DavidBen48/adepa-freifabiano",
     deployUrl: "https://adepa-freifabiano.vercel.app/",
-    category: "FullStack (AI-Powered)"
+    category: "Freelancer (fullstack ai-powered)"
   }
 ];
 
-// Ordem: Backend, Infra, Data, AI, Frontend
-export const SKILLS: Skill[] = [
-  // Backend Engineering (5 itens)
-  { name: "NodeJS", level: "Intermediate", score: 4 },
-  { name: "TypeScript", level: "Intermediate", score: 4 },
-  { name: "NestJS", level: "Intermediate", score: 3 },
-  { name: "Express", level: "Intermediate", score: 4 },
-  { name: "Jest/Testing", level: "Intermediate", score: 3 },
-  
-  // Infrastructure & DB (4 itens)
-  { name: "PostgreSQL", level: "Basic", score: 4 },
-  { name: "Supabase", level: "Basic", score: 3 },
-  { name: "MongoDB", level: "Basic", score: 3 },
-  { name: "Docker", level: "Basic", score: 2 },
-
-  // Data Engineering & Analytics (6 itens)
-  { name: "Python & Pandas", level: "Intermediate", score: 4 },
-  { name: "NumPy & PySpark", level: "Intermediate", score: 3 },
-  { name: "ETL Processes", level: "Basic", score: 2 },
-  { name: "Data Lake/Warehouse", level: "Basic", score: 3 },
-  { name: "PowerBI", level: "Basic", score: 3 },
-  { name: "Google Cloud", level: "Basic", score: 2 },
-
-  // AI Workflow (4 itens)
-  { name: "AI Studio", level: "Intermediate", score: 5 },
-  { name: "Lovable", level: "Intermediate", score: 4 },
-  { name: "Cursor", level: "Intermediate", score: 3 },
-  { name: "Windsurf", level: "Basic", score: 2 },
-
-  // Frontend Ecosystem (4 itens)
-  { name: "Javascript", level: "Intermediate", score: 4 },
-  { name: "Tailwind", level: "Intermediate", score: 3 },
-  { name: "React", level: "Basic", score: 3 },
-  { name: "NextJS", level: "Basic", score: 3 },
+export const SKILL_GROUPS: SkillGroup[] = [
+  {
+    title: "Frontend Ecosystem AI",
+    skills: [
+      { name: "React", score: 5 },
+      { name: "TailwindCSS", score: 4 },
+    ]
+  },
+  {
+    title: "Backend Engineering",
+    skills: [
+      { name: "Python", score: 5 },
+      { name: "Golang", score: 3 },
+      { name: "NestJS + Types", score: 3 },
+      { name: "NodeJS", score: 3 },
+      { name: "Docker", score: 4 },
+      { name: "Bruno & Insomnia", score: 4 },
+    ]
+  },
+  {
+    title: "Networking",
+    skills: [
+      { name: "Linux", score: 3 },
+      { name: "Cisco Packet Tracer", score: 4 },
+      { name: "IP, Gateway & DNS", score: 3 },
+    ]
+  },
+  {
+    title: "Database & Cloud",
+    skills: [
+      { name: "MySQL", score: 5 },
+      { name: "PostgreSQL", score: 4 },
+      { name: "Firebase", score: 3 },
+      { name: "MongoDB", score: 3 },
+      { name: "Google Cloud", score: 4 },
+    ]
+  },
+  {
+    title: "AI Workflow",
+    skills: [
+      { name: "AI Studio", score: 5 },
+      { name: "Google Antigravity", score: 4 },
+      { name: "Cursor", score: 4 },
+    ]
+  }
 ];
+
+// Mantido para retrocompatibilidade se algum componente importar diretamente SKILLS
+export const SKILLS: Skill[] = SKILL_GROUPS.flatMap(group => group.skills);
+

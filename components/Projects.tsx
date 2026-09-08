@@ -6,7 +6,7 @@ import { ProjectCategory } from '../types';
 
 const Projects: React.FC = () => {
   const [offset, setOffset] = useState(0);
-  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('NodeJS');
+  const [activeCategory, setActiveCategory] = useState<ProjectCategory>('Python');
 
   useEffect(() => {
     const handleScroll = () => {
@@ -27,9 +27,12 @@ const Projects: React.FC = () => {
   };
 
   const categories: ProjectCategory[] = [
-    "TypeScript & NestJS",
-    "NodeJS",
-    "FullStack (AI-Powered)"
+    "Python",
+    "Golang",
+    "MySQL & JSON",
+    "Network",
+    "Backend",
+    "Freelancer"
   ];
 
   const filteredProjects = PROJECTS.filter(project => project.category === activeCategory);
@@ -91,21 +94,29 @@ const Projects: React.FC = () => {
           </div>
 
           {/* Category Tabs */}
-          <div className="flex flex-wrap gap-4">
-            {categories.map((category) => (
-              <button
-                key={category}
-                onClick={() => setActiveCategory(category)}
-                className={`
-                  px-6 py-2 border text-sm font-mono uppercase tracking-wider transition-all duration-300
-                  ${activeCategory === category 
-                    ? 'bg-accent text-black border-accent font-bold shadow-[0_0_15px_rgba(34,197,94,0.4)]' 
-                    : 'bg-transparent text-gray-400 border-gray-800 hover:border-accent hover:text-white'}
-                `}
-              >
-                {category}
-              </button>
-            ))}
+          <div className="flex flex-wrap gap-3">
+            {categories.map((category) => {
+              const count = PROJECTS.filter(p => p.category === category).length;
+              return (
+                <button
+                  key={category}
+                  onClick={() => setActiveCategory(category)}
+                  className={`
+                    px-5 py-2 border text-xs md:text-sm font-mono uppercase tracking-wider transition-all duration-300 flex items-center gap-2
+                    ${activeCategory === category 
+                      ? 'bg-accent text-black border-accent font-bold shadow-[0_0_15px_rgba(34,197,94,0.4)]' 
+                      : 'bg-transparent text-gray-400 border-gray-800 hover:border-accent hover:text-white'}
+                  `}
+                >
+                  <span>{category}</span>
+                  <span className={`text-[10px] px-1.5 py-0.5 rounded ${
+                    activeCategory === category ? 'bg-black/30 text-black' : 'bg-gray-800 text-gray-400'
+                  }`}>
+                    {count}
+                  </span>
+                </button>
+              );
+            })}
           </div>
         </div>
 

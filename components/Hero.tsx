@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Terminal, ChevronDown, Server, Database, Settings, Cpu, Globe, Share2 } from 'lucide-react';
+import { Terminal, ChevronDown, Server, Database, Shield, Cpu, Network, HardDrive } from 'lucide-react';
 
 interface HeroProps {
   scrollToSection: (id: string) => void;
@@ -18,18 +18,18 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
 
   return (
     <section id="hero" className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden bg-dark">
-      {/* Backend Themed Parallax Background - Intensified */}
+      {/* Infrastructure & Cybersecurity Parallax Background */}
       <div className="absolute inset-0 z-0 pointer-events-none overflow-hidden select-none opacity-30">
         
-        {/* Gear / Settings (Spinning Faster) */}
+        {/* Shield / Cybersecurity */}
         <div 
           className="absolute top-[10%] right-[10%] text-gray-800"
-          style={{ transform: `translateY(${offset * 0.5}px) rotate(${offset * 0.4}deg)` }}
+          style={{ transform: `translateY(${offset * 0.4}px) rotate(${offset * 0.2}deg)` }}
         >
-          <Settings size={200} strokeWidth={0.5} />
+          <Shield size={180} strokeWidth={0.5} />
         </div>
 
-        {/* Database Stack (Moving Faster Up) */}
+        {/* Database */}
         <div 
           className="absolute bottom-[15%] left-[5%] text-gray-800"
           style={{ transform: `translateY(${-offset * 0.4}px)` }}
@@ -37,15 +37,15 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           <Database size={150} strokeWidth={0.5} />
         </div>
 
-        {/* Server Icon (Moving Down Fast) */}
+        {/* Server Icon */}
         <div 
-          className="absolute top-[20%] left-[15%] text-gray-800"
-          style={{ transform: `translateY(${offset * 0.6}px)` }}
+          className="absolute top-[20%] left-[12%] text-gray-800"
+          style={{ transform: `translateY(${offset * 0.5}px)` }}
         >
-          <Server size={100} strokeWidth={0.8} />
+          <Server size={110} strokeWidth={0.8} />
         </div>
 
-        {/* CPU Chip (Moving Up) */}
+        {/* CPU Chip */}
         <div 
           className="absolute bottom-[20%] right-[20%] text-gray-800"
           style={{ transform: `translateY(${-offset * 0.5}px)` }}
@@ -53,19 +53,20 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
           <Cpu size={120} strokeWidth={0.5} />
         </div>
 
-        {/* Network / Nodes */}
+        {/* Network Nodes */}
         <div 
-          className="absolute top-[40%] right-[5%] text-gray-800/50"
+          className="absolute top-[45%] right-[5%] text-gray-800/50"
           style={{ transform: `translateY(${offset * 0.3}px)` }}
         >
-          <Share2 size={80} strokeWidth={1} />
+          <Network size={90} strokeWidth={0.8} />
         </div>
 
+        {/* Hard Drive */}
         <div 
-          className="absolute top-[60%] left-[10%] text-gray-800/50"
+          className="absolute top-[65%] left-[8%] text-gray-800/50"
           style={{ transform: `translateY(${-offset * 0.2}px)` }}
         >
-          <Globe size={90} strokeWidth={0.5} />
+          <HardDrive size={90} strokeWidth={0.6} />
         </div>
 
         {/* Abstract Lines/Grid overlay */}
@@ -74,26 +75,27 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
 
       <div className="relative z-10 max-w-5xl mx-auto px-6 text-center md:text-left w-full">
         <div className="animate-fade-in space-y-6">
-          <p className="text-accent text-sm md:text-base tracking-widest mb-4">
-            hello world, i am
-          </p>
+          <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-accent/10 border border-accent/30 text-accent text-xs font-mono tracking-widest uppercase">
+            <span className="w-2 h-2 rounded-full bg-accent animate-pulse"></span>
+            Infrastructure • Cybersecurity • Linux • Networking • Automation
+          </div>
           
           <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold text-white tracking-tighter leading-tight">
             <span className="text-accent">{'{'}</span>D<span className="text-accent">{'}'}</span>AVID <span className="text-accent">{'{'}</span>B<span className="text-accent">{'}'}</span>EN
           </h1>
           
-          <h2 className="text-xl md:text-2xl text-gray-400 font-light mt-2">
-            Desenvolvedor Backend | Analista de Dados
+          <h2 className="text-xl md:text-2xl text-gray-200 font-light mt-2 font-mono">
+            Analista de TI & Datacenter N1 <span className="text-accent font-normal">|</span> DevSecOps
           </h2>
 
-          <p className="max-w-2xl text-gray-500 mt-6 leading-relaxed border-l-2 border-accent/50 pl-4 md:ml-0 mx-auto text-left">
-            "Arquitetando sistemas escaláveis e transformando dados complexos em inteligência de negócio."
+          <p className="max-w-2xl text-gray-400 mt-6 leading-relaxed border-l-2 border-accent/50 pl-4 md:ml-0 mx-auto text-left font-mono text-sm md:text-base">
+            "Sustentando a alta disponibilidade de ambientes de missão crítica em datacenter, aplicando segurança cibernética e construindo automações escaláveis com Python, Go e Linux."
           </p>
 
-          <div className="flex flex-col md:flex-row gap-6 mt-12 items-start md:items-center">
+          <div className="flex flex-col md:flex-row gap-6 mt-10 items-start md:items-center">
             <button 
               onClick={() => scrollToSection('projects')}
-              className="px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-all duration-300 uppercase tracking-widest text-sm font-semibold flex items-center gap-2 group"
+              className="px-8 py-3 border border-accent text-accent hover:bg-accent hover:text-black transition-all duration-300 uppercase tracking-widest text-sm font-semibold flex items-center gap-2 group font-mono"
             >
               <Terminal size={16} className="group-hover:animate-pulse" />
               VER PROJETOS
@@ -101,7 +103,7 @@ const Hero: React.FC<HeroProps> = ({ scrollToSection }) => {
             
             <button 
               onClick={() => scrollToSection('about')}
-              className="px-8 py-3 border border-transparent text-gray-400 hover:text-white transition-all duration-300 uppercase tracking-widest text-sm font-semibold hover:border-gray-700"
+              className="px-8 py-3 border border-transparent text-gray-400 hover:text-white transition-all duration-300 uppercase tracking-widest text-sm font-semibold hover:border-gray-700 font-mono"
             >
               SOBRE MIM
             </button>
